@@ -21,7 +21,6 @@ Follow the steps below carefully to automate file extraction from the Internet A
    [Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/script.js)
 
    ```
-   javascript
    // === Auto flip + capture + download (per-URL dedup for img.BRpageimage) ===
    async function captureFlipbookPages({
     delayBetweenPages = 1200,   // ms to wait after flipping
@@ -146,7 +145,6 @@ Follow the steps below carefully to automate file extraction from the Internet A
 5. **Run the script** by pasting the following line:
 
    ```
-   javascript
    captureFlipbookPages({
       delayBetweenPages: 2000,  // increase if pages load slowly
       maxPages: 400,
