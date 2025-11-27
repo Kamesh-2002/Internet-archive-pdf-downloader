@@ -18,7 +18,7 @@ Follow the steps below carefully to automate file extraction from the Internet A
 
 4. **Paste the following code into the console:**
 
-   [Download the PDF](https://github.com/username/repository/blob/main/path/to/file.pdf)
+   [Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/script.js)
 
    ```
    javascript
@@ -145,7 +145,7 @@ Follow the steps below carefully to automate file extraction from the Internet A
 
 5. **Run the script** by pasting the following line:
 
-   [Download the PDF](https://github.com/username/repository/blob/main/path/to/file.pdf)
+   [Download the PDF](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/img%20to%20pdf.py)
 
    ```
    javascript
