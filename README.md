@@ -145,8 +145,6 @@ Follow the steps below carefully to automate file extraction from the Internet A
 
 5. **Run the script** by pasting the following line:
 
-   [Download the PDF](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/img%20to%20pdf.py)
-
    ```
    javascript
    captureFlipbookPages({
@@ -168,6 +166,57 @@ Before running the script, make sure to **disable** the following browser settin
 * **“Ask every time before downloading”**
 
 This ensures the files download automatically without interruptions.
+
+---
+
+## 🐍 **Python code for converting the images to pdf (Optional)**
+
+[Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/img%20to%20pdf.py)
+
+```
+from PIL import Image
+import os
+
+def images_to_pdf(input_folder, output_pdf):
+    images = []
+
+    # Supported image formats
+    valid_ext = ('.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.webp')
+
+    # Sort files to keep page order correct
+    files = sorted([
+        f for f in os.listdir(input_folder)
+        if f.lower().endswith(valid_ext)
+    ])
+
+    if not files:
+        raise Exception("No images found in the folder")
+
+    for file in files:
+        path = os.path.join(input_folder, file)
+        img = Image.open(path)
+
+        # Convert all images to RGB (PDF doesn't support RGBA)
+        if img.mode in ("RGBA", "P"):
+            img = img.convert("RGB")
+
+        images.append(img)
+
+    # First image is base, rest are appended
+    images[0].save(
+        output_pdf,
+        save_all=True,
+        append_images=images[1:],
+        resolution=300
+    )
+
+    print(f"✅ PDF created: {output_pdf}")
+
+
+# ===== USAGE =====
+images_to_pdf(r"replace with images downloaded directory", "output 1.pdf")
+
+```
 
 ---
 
