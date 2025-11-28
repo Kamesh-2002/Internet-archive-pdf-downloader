@@ -18,7 +18,7 @@ Follow the steps below carefully to automate file extraction from the Internet A
 
 4. **Paste the following code into the console:**
 
-   [Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/script.js)
+   [Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/master/script.js)
 
    ```
    // === Auto flip + capture + download (per-URL dedup for img.BRpageimage) ===
@@ -171,7 +171,7 @@ This ensures the files download automatically without interruptions.
 
 Place your images containing directory in the last line of `images_to_pdf` function 
 
-[Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/img%20to%20pdf.py)
+[Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/master/img%20to%20pdf.py)
 
 ```
 from PIL import Image
