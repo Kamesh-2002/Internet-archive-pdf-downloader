@@ -169,6 +169,8 @@ This ensures the files download automatically without interruptions.
 
 ## 🐍 **Python code for converting the images to pdf (Optional)**
 
+Place your images containing directory in the last line of `images_to_pdf` function 
+
 [Download the file](https://raw.githubusercontent.com/Kamesh-2002/Internet-archive-pdf-downloader/refs/heads/main/img%20to%20pdf.py)
 
 ```
